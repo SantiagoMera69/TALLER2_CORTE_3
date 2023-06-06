@@ -1,0 +1,20 @@
+Algoritmo ConversionNota
+	Definir quiz, taller, trabajoFinal, exposicion, notaFinal  como real;
+	
+	Escribir "Ingrese la calificación del Quiz: "
+	Leer quiz;
+	
+	Escribir "Ingrese la calificación del Taller: "
+	Leer taller;
+	
+	Escribir "Ingrese la calificación del Trabajo Final: "
+	Leer trabajoFinal;
+	
+	Escribir "Ingrese la calificación de la Exposición: "
+	Leer exposicion;
+	
+	notaFinal <- (quiz + taller + trabajoFinal + exposicion) / 4
+	
+	Escribir "La nota final obtenida es: ", notaFinal;
+	
+FinAlgoritmo
