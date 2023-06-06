@@ -1,0 +1,15 @@
+Algoritmo ConversionTiempo
+	Definir segundos, horas, minutos, segundosRestantes Como Entero;
+	
+	Escribir "Ingrese el tiempo transcurrido en segundos:";leer segundos;
+	
+	
+	
+	horas <- trunc(segundos / 3600)
+    segundosRestantes <- segundos % 3600
+    minutos <- trunc(segundosRestantes / 60)
+    segundosRestantes <- segundosRestantes % 60
+	
+	Escribir "Tiempo equivalente:", horas, "h", minutos, "m", segundosRestantes, "s";
+	
+FinAlgoritmo
