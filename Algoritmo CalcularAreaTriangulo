@@ -1,0 +1,23 @@
+Algoritmo CalcularAreaTriangulo
+    Definir lado1, lado2, angulo, angulo_radianes, area Como Real;
+
+    Escribir "Ingrese el valor del lado 1: "
+    Leer lado1;
+
+    Escribir "Ingrese el valor del lado 2: "
+    Leer lado2;
+
+    Escribir "Ingrese el valor del ángulo (en grados): "
+    Leer angulo;
+
+    // Convertir el ángulo a radianes
+    angulo_radianes <- angulo * 3.14159 / 180.0
+
+    // Calcular el área utilizando la fórmula
+    area <- lado1 * lado2 * sen(angulo_radianes)/2
+
+    // Mostrar el resultado
+    Escribir "El área del triángulo es: ", area;
+
+
+FinAlgoritmo
