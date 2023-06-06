@@ -1,0 +1,14 @@
+Algoritmo ConversionTemperatura
+
+Definir   f,  celsius Como Real ;
+
+Escribir "ingrese la temperatura en grados Fahrenheit:";
+Leer f ;
+
+celsius <- (f-32)*5/9
+
+//Imprimir resultado
+
+Escribir "la temperatura equivalente en grados celsius es:", celsius;
+
+FinAlgoritmo
