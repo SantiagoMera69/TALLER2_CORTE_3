@@ -1,0 +1,35 @@
+Algoritmo CalculoPrestamoHipotecario
+    Definir capital, interesAnual, interesMensual, cuota, totalPagado, amortizacion, interes Como Real;
+    Definir plazoMeses Como Entero;
+
+    // Solicitar al usuario los datos del préstamo
+    Escribir "Ingrese el capital prestado: "
+    Leer capital;
+
+    Escribir "Ingrese el interés anual: "
+    Leer interesAnual;
+
+    Escribir "Ingrese el plazo en meses: "
+    Leer plazoMeses;
+
+    // Calcular el interés mensual (ratio)
+    interesMensual <- interesAnual / 12.0
+
+    // Calcular la cuota mensual utilizando la fórmula
+    cuota <- (capital * interesMensual * (1 - Potencia(1 + interesMensual, -plazoMeses))) / 100.0
+
+    // Calcular el total pagado
+    totalPagado <- cuota * plazoMeses
+
+    // Calcular la amortización mensual y los intereses
+    amortizacion <- capital
+    interes <- totalPagado - capital
+
+    // Mostrar los resultados
+    Escribir ""
+    Escribir "Cuota mensual: ", cuota;
+    Escribir "Total pagado: ", totalPagado;
+    Escribir "Amortización: ", amortizacion;
+    Escribir "Intereses: ", interes;
+
+FinAlgoritmo
