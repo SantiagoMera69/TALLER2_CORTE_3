@@ -1,0 +1,45 @@
+Algoritmo CalculoNomina
+    Definir sueldoBase, complementoDestino, complementoCargoAcademico, horasExtraRealizadas Como Real;
+    Definir hijos, mayores Como Entero;
+    Definir sueldoBruto, irpf, retencionIRPF, sueldoNeto Como Real;
+
+    // Solicitar al usuario los datos
+    Escribir "Sueldo base:"
+    Leer sueldoBase;
+
+    Escribir "Complemento de destino:"
+    Leer complementoDestino;
+
+    Escribir "Complemento de cargo académico:"
+    Leer complementoCargoAcademico;
+
+    Escribir "Horas extra realizadas:"
+    Leer horasExtraRealizadas;
+
+    Escribir "Hijos:"
+    Leer hijos;
+
+    Escribir "Mayores:"
+    Leer mayores;
+
+    // Calcular sueldo bruto
+    sueldoBruto <- sueldoBase + complementoDestino + complementoCargoAcademico + (horasExtraRealizadas * 23)
+
+    // Calcular porcentaje de IRPF
+    irpf <- 24 - (2 * hijos) - mayores
+
+    // Calcular retención por IRPF
+    retencionIRPF <- (sueldoBruto * irpf) / 100
+
+    // Calcular sueldo neto
+    sueldoNeto <- sueldoBruto - retencionIRPF
+
+    // Mostrar resultados
+    Escribir "\nCalculo de la nómina:"
+    Escribir "Sueldo bruto:", sueldoBruto
+    Escribir "Porcentaje de IRPF:", irpf, "%"
+    Escribir "Retención por IRPF:", retencionIRPF
+    Escribir "Sueldo neto:", sueldoNeto;
+
+
+FinAlgoritmo
