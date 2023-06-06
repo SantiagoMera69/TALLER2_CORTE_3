@@ -1,0 +1,14 @@
+Algoritmo CalculoVolumenCono
+   
+   Definir  radio, altura, volumen  Como Real
+    // Asignar valores a las variables
+    radio <- 14.5
+    altura <- 26.79
+	
+    // Calcular el volumen del cono
+    volumen <- 3.141592 * radio^2 * altura / 3
+	
+    // Imprimir el resultado
+    Escribir "El volumen del cono es: ", volumen;
+	
+FinAlgoritmo
