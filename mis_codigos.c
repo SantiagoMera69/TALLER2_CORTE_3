@@ -205,32 +205,8 @@ int main() {
     return 0;
 }
 
-main_area_triangulo
-#include <stdio.h>
-#include <math.h>
-
-int main() {
-    float lado1, lado2, angulo, area;
-
-    // Solicitar al usuario los valores de los lados y el ángulo
-    printf("Ingrese el valor del lado 1: ");
-    scanf("%f", &lado1);
-
-    printf("Ingrese el valor del lado 2: ");
-    scanf("%f", &lado2);
-
-    printf("Ingrese el valor del ángulo (en radianes): ");
-    scanf("%f", &angulo);
-
-    // Calcular el área utilizando la fórmula
-    area = (1.0 / 2.0) * lado1 * lado2 * sin(angulo);
-
-    // Mostrar el resultado
-    printf("El área del triángulo es: %.2f\n", area);
-
-    return 0;
-}
-main_area_triangulo_2
+ 
+main_area_triangulo 
 
 #include <stdio.h>
 #include <math.h>
